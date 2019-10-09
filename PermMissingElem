@@ -1,0 +1,5 @@
+def solution(A):
+    x = 0
+    for i in range(len(A)):
+        x = x ^ A[i] ^ (i + 1)
+    return x ^ (len(A) + 1)
